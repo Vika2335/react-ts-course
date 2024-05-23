@@ -3,9 +3,11 @@ import List from '../components/List';
 import {ITodo} from '../types/types';
 import axios from 'axios';
 import TodoItem from '../components/TodoItem';
+import {useNavigate} from 'react-router-dom';
 
 const TodosPage: FC = () => {
   const [todos, setTodos] = useState<ITodo[]>([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchTodos();
@@ -21,7 +23,7 @@ const TodosPage: FC = () => {
   }
 
   return (
-    <List items={todos} renderItem={(todo: ITodo) => <TodoItem todo={todo} key={todo.id}/>}/>
+    <List items={todos} renderItem={(todo: ITodo) => <TodoItem todo={todo} key={todo.id} onClick={(todo) => navigate('/todos/' + todo.id)}/>}/>
   )
 }
 
