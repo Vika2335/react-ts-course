@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import UserPage from './components/UserPage';
-import TodosPage from './components/TodosPage';
+import UserPage from './components/pages/UserPage';
+import TodosPage from './components/pages/TodosPage';
 import { NavLink } from 'react-router-dom';
-import UserItemPage from './components/UserItemPage';
-import TodosItemPage from './components/TodosItemPage';
+import UserItemPage from './components/pages/UserItemPage';
+import TodosItemPage from './components/pages/TodosItemPage';
 import EventsExample from './components/EventsExample';
 
 const App = () => {

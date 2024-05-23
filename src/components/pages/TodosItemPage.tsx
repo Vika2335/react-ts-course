@@ -1,5 +1,5 @@
 import React, {FC, useEffect, useState} from 'react';
-import {ITodo} from "../types/types";
+import {ITodo} from "../../types/types";
 import axios from "axios";
 import {useParams, useNavigate} from 'react-router-dom';
 

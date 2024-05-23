@@ -1,8 +1,8 @@
 import React, {FC, useEffect, useState} from 'react';
-import List from '../components/List';
-import {ITodo} from '../types/types';
+import List from '../List';
+import {ITodo} from '../../types/types';
 import axios from 'axios';
-import TodoItem from '../components/TodoItem';
+import TodoItem from '../TodoItem';
 import {useNavigate} from 'react-router-dom';
 
 const TodosPage: FC = () => {

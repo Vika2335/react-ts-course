@@ -1,7 +1,7 @@
 import React, {FC, useEffect, useState} from 'react';
-import UserItem from '../components/UserItem';
-import {IUser} from '../types/types';
-import List from '../components/List';
+import UserItem from '../UserItem';
+import {IUser} from '../../types/types';
+import List from '../List';
 import axios from 'axios';
 import {useNavigate} from 'react-router-dom';
 
